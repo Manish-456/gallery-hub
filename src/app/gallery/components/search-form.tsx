@@ -21,7 +21,7 @@ useEffect(() => {
 }, [initialSearch])
 
   return (
-    <form className="flex gap-4 bg-background p-4 sticky w-full top-16 z-30 flex-col" onSubmit={handleSubmit}>
+    <form className="flex gap-4 bg-background  sticky w-full top-16 z-30 flex-col" onSubmit={handleSubmit}>
      <div className="flex gap-4 flex-col">
      <div className="flex items-center gap-4">
      <Input
