@@ -12,7 +12,7 @@ export type SearchResult = {
 export default async function Page() {
    const results =  await cloudinary.v2.search
     .expression('resource_type:image AND tags=favorite')
-    .max_results(20)
+    .max_results(100)
     .with_field("tags")
     .execute() as {resources :  SearchResult[]};
    

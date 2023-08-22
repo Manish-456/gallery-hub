@@ -23,7 +23,7 @@ export default async function Page({
         searchParams.search ? ` AND tags=${searchParams.search}` : ""
       }`
     )
-    .max_results(20)
+    .max_results(100)
     .with_field("tags")
     .execute()) as { resources: SearchResult[] };
 
