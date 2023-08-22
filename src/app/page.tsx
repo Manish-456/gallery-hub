@@ -11,7 +11,7 @@ export default function Home() {
 
     <CldUploadButton
     onUpload={(result, widget) => {
-      setImageId(result.info.public_id);
+      setImageId(result?.info?.public_id);
     }}
     uploadPreset="wgpti4jk" />
 
